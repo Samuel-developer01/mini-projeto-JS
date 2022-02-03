@@ -24,4 +24,4 @@ function lampOff() {
 
 
 document.getElementById('On').addEventListener("click", lampOn);
-document.getElementById('On').addEventListener("click", lampOff);
+document.getElementById('Off').addEventListener("click", lampOff);
