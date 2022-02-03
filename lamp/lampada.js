@@ -1,24 +1,27 @@
 
 function lampOn() {
     const On = document.getElementById('On')
-    const Off = document.getElementById('Off')
+    const imgOn = './img/ligada.jpg'
+    const imgOff = './img/desligada.jpg'
     const lamp = document.getElementById('lamp').src
     if(lamp == On) {
-        document.getElementById('lamp').src = './img/desligada.jpg'
-    } else { document.getElementById('lamp').src = './img/ligada.jpg' }
+        document.getElementById('lamp').src = imgOff
+    } else { document.getElementById('lamp').src = imgOn }
 }
 
 function lampOff() {
     const On = document.getElementById('On')
-    const Off = document.getElementById('Off')
+    const imgOn = './img/ligada.jpg'
+    const imgOff = './img/desligada.jpg'
     const lamp = document.getElementById('lamp').src
     if(lamp == On) {
-        document.getElementById('lamp').src = './img/ligada.jpg'
-    } else { document.getElementById('lamp').src = './img/desligada.jpg' }
+        document.getElementById('lamp').src = imgOn
+    } else { document.getElementById('lamp').src = imgOff }
 }
+
 
 
 
 
 document.getElementById('On').addEventListener("click", lampOn);
-document.getElementById('Off').addEventListener("click", lampOff);
+document.getElementById('On').addEventListener("click", lampOff);
